@@ -10,10 +10,10 @@ function modelLoaded(){
 }
 function draw(){
   image(video, 0, 0, 300, 300);
-  classifier.classify(video, gotResults);
+  classifier.classify(video, gotResult);
 }
 var previous_result = ' ';
-function gotResults(error, results){
+function gotResult(error, results){
   if (error){
     console.error(error);
   } else{
